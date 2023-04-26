@@ -12,7 +12,7 @@ amqp.connect('amqp://localhost', function(error0, connection) {
         }
 
         var queue = 'hello';
-        // var log = '127.0.0.1 - - [31/Jul/2021:19:56:04 +0100] "GET / HTTP/1.1" 200 3477 "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36"';
+        var log = '127.0.0.1 - - "GET / HTTP/1.1" "-" "This is an example message"';
 
         channel.assertQueue(queue, {
             durable: false
